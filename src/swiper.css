@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  height: 550px;
+  margin:auto;
   position: relative;
   background-color: #9D9D8C;
 }
@@ -16,7 +17,7 @@
 
 .swiper-slide {
   width: 300px !important; 
-  height: 400px;
+  height: 300px;
   transition: all 0.3s ease;
   opacity: 0.7;
   transform: scale(0.9);
@@ -80,24 +81,6 @@
   width: 12px;
   height: 12px;
   margin: 0 8px !important;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #5D5C4D;
-  transform: scale(1.2);
-}
-.swiper-pagination {
-  position: relative;
-  margin-top: 20px;
-}
-
-.swiper-pagination-bullet {
-  background: #ECE6D4;
-  opacity: 0.5;
-  width: 12px;
-  height: 12px;
-  margin: 0 8px;
 }
 
 .swiper-pagination-bullet-active {

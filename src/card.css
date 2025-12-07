@@ -1,83 +1,48 @@
-/* .miniCards {
-  width: 150px;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15%;
-  border: 1px solid black;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
-}
-
-.miniCards::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 1) 100%
-    );
-  z-index: 1;
-}
-
-
-.card{
-  display: flex;
-  flex-direction: row;
-  border: 2px solid #5D5C4D;
-  background-color: #ECE6D4;
-  height: 150px;
-  width: 700px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.poster{
-  height: 90%;
-  width: 120px;
-  display: flex;
-  object-fit: cover;
-  margin: 1% 5% 1% 1%;
-}
-
-.infoText{
-  flex: 1;
-  max-width: 100%;
-  text-align: left;
-  word-wrap: break-word;
-  overflow: hidden;
-  margin-right: 2%;
-} */
 .card {
-  display: flex;
-  flex-direction: row;
-  border: 2px solid #5D5C4D;
-  background-color: #ECE6D4;
-  height: 150px;
-  width: 100%;
-  overflow: hidden;
+  width: 328px;
+  height: 500px;
+  position: relative;
   border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #5D5C4D;
+  flex-shrink: 0; /* ← ВАЖНО! не позволяет растягиваться */
+  display: block; /* ← вместо flex */
 }
 
 .poster {
-  height: 90%;
-  width: 120px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin: 1% 5% 1% 1%;
+  display: block; /* ← убираем flex-поведение */
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, 
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.8) 30%, 
+    rgba(0,0,0,0.5) 60%, 
+    rgba(0,0,0,0) 100%
+  );
+  pointer-events: none;
 }
 
 .infoText {
-  flex: 1;
-  max-width: 100%;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 2;
   text-align: left;
-  word-wrap: break-word;
-  overflow: hidden;
-  margin-right: 2%;
+}
+
+.infoText h1 {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
