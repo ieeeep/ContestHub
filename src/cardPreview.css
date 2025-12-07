@@ -1,16 +1,48 @@
-.allCards{
+.allCards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #ECE6D4;
-    height: 700px;
+    width: 100%;
+    height: 1500px;
+    max-width: 1920px;
+    box-sizing: border-box;
 }
 
-.allEvents{
-    margin-top: 0;
+.head-events{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 15px;
 }
 
-.cards{
-    width: 60%;
+.drop-btn-sort, .filtrs-btn{
+    background-color: #9D9D8C;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #ECE6D4;
+    padding: 5px;
+    width: 230px;
+    height: 45px;
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.allEvents {
+    max-width: 1400px;
+    text-align: left;
+    font-size: 35px;
+    color: #5D5C4D;
+    margin: 30px 0;
+}
+
+.cardsBasic {
+    width: 80%;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5%;
-    margin: 1% auto;
+    gap: 30px;
 }

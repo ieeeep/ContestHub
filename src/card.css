@@ -1,19 +1,19 @@
 .card {
-  width: 328px;
-  height: 500px;
+  width: 308px;
+  height: 480px;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   border: 2px solid #5D5C4D;
-  flex-shrink: 0; /* ← ВАЖНО! не позволяет растягиваться */
-  display: block; /* ← вместо flex */
+  flex-shrink: 0;
+  display: block;
 }
 
 .poster {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /* ← убираем flex-поведение */
+  display: block;
 }
 
 .card::after {
@@ -25,8 +25,8 @@
   height: 50%;
   background: linear-gradient(to top, 
     rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0.8) 30%, 
-    rgba(0,0,0,0.5) 60%, 
+    rgba(0,0,0,0.8) 50%, 
+    rgba(0,0,0,0.5) 80%,
     rgba(0,0,0,0) 100%
   );
   pointer-events: none;
@@ -40,9 +40,9 @@
   text-align: left;
 }
 
-.infoText h1 {
+.infoText h1, .infoText p {
   color: white;
   font-size: 18px;
   margin: 0;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  word-wrap: break-word;
 }

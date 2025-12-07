@@ -55,7 +55,7 @@ export default function SwiperCarousel() {
                     modifier:1,
                     slideShadows:true,
                 }}
-                autoplay={{ delay: 3000, pauseOnMouseEnter: true }}
+                autoplay={{ delay: 1500}}
             >
                 {cards.map((card) => (
                     <SwiperSlide key={card.id}>

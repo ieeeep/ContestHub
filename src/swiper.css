@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 550px;
+  height: 560px;
   margin:auto;
   position: relative;
   background-color: #9D9D8C;
@@ -31,8 +31,7 @@
 
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
-  background: rgba(0, 0, 0, 0.2) !important;
-  border-radius: 15px;
+  display: none !important;
 }
 
 .carousel-btn-left,
@@ -44,7 +43,6 @@
   height: 50px;
   background: rgba(93, 92, 77, 0.9);
   color: #ECE6D4;
-  border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -53,7 +51,7 @@
   cursor: pointer;
   z-index: 100;
   transition: all 0.3s ease;
-  margin:  02%;
+  margin:  0 2%;
 }
 
 .carousel-btn-left:hover,
@@ -73,6 +71,7 @@
 .swiper-pagination {
   position: relative !important;
   margin-top: 20px;
+  z-index: 100;
 }
 
 .swiper-pagination-bullet {

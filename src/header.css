@@ -1,6 +1,6 @@
 header{
     position: sticky;
-    top: auto;
+    top: 0;
     z-index: 1000;
 }
 

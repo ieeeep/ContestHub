@@ -1,0 +1,49 @@
+.miniCards{
+    height: 400px;
+    width: 250px;
+    display: flex;
+    border-radius: 15px;
+    background-color: #9D9D8C;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.miniPoster{
+    height: 200px;
+    margin: 15px auto;
+    border-radius: 15px;
+}
+
+.miniInfoText{
+  z-index: 2;
+  text-align: left;
+}
+
+.miniInfoText h1, .miniInfoText p{
+  color: black;
+  font-size: 18px;
+  margin:10px;
+  word-wrap: break-word;
+}
+
+.join-btn{
+    background-color: #ECE6D4;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #5D5C4D;
+    padding: 5px;
+    width: 230px;
+    height: 45px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.join-btn:hover{
+    background-color: #5D5C4D;
+    color: #ECE6D4;
+    
+}

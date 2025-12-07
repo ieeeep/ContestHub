@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import './header.css'
 import { HiOutlineFolderDownload } from "react-icons/hi";
 import { FaRegStar } from "react-icons/fa6";
@@ -11,6 +12,7 @@ import { IoMdSearch } from "react-icons/io";
 
 export default function Header() {
     const [darkTheme, setDarkTheme] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <header>
@@ -27,7 +29,7 @@ export default function Header() {
                     <button className='savesBut'>{<HiOutlineFolderDownload />}</button>
                     <button className='starBut'>{<FaRegStar />}</button>
                     <button>{<MdOutlineNotificationsNone />}</button>
-                    <button>{<MdAccountCircle />}</button>
+                    <button className='account' onClick={()=>navigate('/personalCab')}>{<MdAccountCircle />}</button>
                 </div>
                 <button
                     onClick={() => setDarkTheme(!darkTheme)}>
