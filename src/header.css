@@ -1,0 +1,97 @@
+header{
+    position: sticky;
+    top: auto;
+    z-index: 1000;
+}
+
+.greenHeader{
+    height: 69px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #9D9D8C;
+    padding: 0 2%;
+    position: relative;
+    z-index: 1;
+}
+
+.lightIcon{
+    height: 40px;
+    background: #ECE6D4;
+    border-bottom: 3px solid #5D5C4D;
+    border-top: 3px solid #5D5C4D;
+}
+
+.logo{
+    height: 165px;
+    position: absolute;
+    left: 20px;
+    top: 80%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 25%;
+    background-color: #9D9D8C;
+    gap: 3%;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+button{
+    display: flex;
+    float: right;
+    align-items: center;
+    border: none;
+    background: #9D9D8C;
+    font-size: 30px;
+    color: #ECE6D4;
+}
+
+.createBut{
+    background-color: #ECE6D4;
+    color: #5D5C4D;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    gap: 5%; 
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputForSearch {
+    display: flex;
+    align-items: center;
+    background-color: #ECE6D4;
+    border-radius: 10px;
+    padding: 0 8px;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    margin-left: 20%;
+    border: 2px solid transparent;
+}
+
+.searchInput {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #5D5C4D;
+    font-size: 18px;
+    padding: 4px 0;
+    outline: none;
+}
+
+.searchBut{
+    background: transparent;
+    border: none;
+    color: #5D5C4D;
+    cursor: pointer;
+    padding: 5px;
+}

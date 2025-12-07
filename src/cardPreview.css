@@ -1,0 +1,16 @@
+.allCards{
+    background-color: #ECE6D4;
+    height: 700px;
+}
+
+.allEvents{
+    margin-top: 0;
+}
+
+.cards{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+    margin: 1% auto;
+}

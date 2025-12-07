@@ -1,0 +1,20 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: #9D9D8C;
+    border-top: 3px solid #5D5C4D;
+    justify-content: space-between;
+}
+
+.iconsFoot{
+    display: flex;
+    margin: 2%;
+    font-size: 30px;
+}
+
+.textToFooter{
+    float: left;
+    text-align: left;
+    margin: 2%;
+}
