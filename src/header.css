@@ -1,7 +1,16 @@
-header{
+body{
+    background-color: #9D9D8C;
+}
+
+.header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: transform 0.6s ease-in-out;
+    transform: translateY(0);
+}
+.header.down {
+  transform: translateY(-150%); 
 }
 
 .greenHeader{
@@ -16,17 +25,17 @@ header{
 }
 
 .lightIcon{
-    height: 40px;
+    height: 20px;
     background: #ECE6D4;
     border-bottom: 3px solid #5D5C4D;
     border-top: 3px solid #5D5C4D;
 }
 
 .logo{
-    height: 165px;
+    height: 100px;
     position: absolute;
     left: 20px;
-    top: 80%;
+    top: 85%;
     transform: translateY(-50%);
     z-index: 1000;
 }
